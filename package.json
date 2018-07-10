@@ -1,6 +1,6 @@
 {
   "name": "koa-file-middle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "static file router for koa2",
   "main": "index.js",
   "scripts": {},
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/xerysherry/koa-file-middle/issues"
   },
-  "homepage": "https://github.com/xerysherry/koa-file-middle#readme"
+  "homepage": "https://github.com/xerysherry/koa-file-middle#readme",
+  "keywords": [
+    "koa",
+    "file",
+    "router",
+    "middle",
+    "middleware"
+  ]
 }
