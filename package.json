@@ -1,0 +1,12 @@
+{
+  "name": "koa-file-middle",
+  "version": "1.0.0",
+  "description": "static file router for koa2",
+  "main": "index.js",
+  "scripts": {},
+  "author": "xerysherry",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "iconv-lite": "^0.4.23"
+  }
+}
