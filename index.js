@@ -1,8 +1,8 @@
 const util = require('util');
 const fs = require('fs');
-const zlib = require('zlib')
-const Stream = require('stream')
-const iconv = require('iconv-lite')
+const zlib = require('zlib');
+const Stream = require('stream');
+const utf8 = require('utf8');
 const {
     normalize,
     extname,
@@ -58,7 +58,7 @@ function UrlDecode(url)
         return String.fromCharCode(code);
     });
     if (greater_7f)
-        nexturl = iconv.decode(Buffer.from(nexturl, 'binary'), "utf8");
+        nexturl = utf8.decode(nexturl);
     return nexturl;
 };
 
