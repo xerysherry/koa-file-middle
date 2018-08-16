@@ -197,7 +197,9 @@ function Compress(ctx)
     if(!encoding)
         return;
     encoding = ctx.acceptsEncodings(encoding);
-
+    if(!encoding)
+        return;
+        
     ctx.set('Content-Encoding', encoding);
     ctx.res.removeHeader('Content-Length');
     const stream = ctx.body = encoding_methods[encoding]()
